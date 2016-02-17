@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Source mapping for dynamic style tag</title>
+</head>
+<body>
+<div class="InfoBannerTile-root--2XZ">Text</div>
+<script>
+    var css = '\n    .InfoBannerTile-root--2XZ {\n      padding: 40px;\n      text-align: center;\n      font-size: 1.6rem;\n    }\n\n    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi8uLi8uLi8uLi8uLi9wb3N0Y3NzLWxvYWRlci9pbmRleC5qcz9wYXJzZXI9cG9zdGNzcy1zY3NzIS9Vc2Vycy9WbGFkaW1pci9Qcm9qZWN0cy9wbHlvLndlYi9zcmMvY29tcG9uZW50cy9UaWxlL0luZm9CYW5uZXJUaWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBQ2QsbUJBQW1CO0VBQ25CLGtCQUFrQjtDQUNuQiIsImZpbGUiOiJJbmZvQmFubmVyVGlsZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJvb3Qge1xuICBwYWRkaW5nOiA0MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMS42cmVtO1xufVxuIl0sInNvdXJjZVJvb3QiOiJ3ZWJwYWNrOi8vIn0= */';
+    var style = document.createElement('style');
+    style.setAttribute('type', 'text/css');
+    if ('textContent' in style) {
+        style.textContent = css + "\n/*# sourceURL=foo.css*/";
+    } else {
+        style.styleSheet.cssText = css + "\n/*# sourceURL=foo.css*/";
+    }
+    document.head.appendChild(style);
+</script>
+</body>
+</html>
