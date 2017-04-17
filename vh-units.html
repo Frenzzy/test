@@ -9,15 +9,19 @@
 </head>
 <body style="margin:0">
     <div id="a" style="background:yellowgreen;height:100vh">a</div>
+
     <div><b>Initial:</b></div>
     <div>window.innerHeight: <span id="o1"></span></div>
     <div>a.clientHeight: <span id="o2"></span></div>
     <div>a.offsetHeight: <span id="o3"></span></div>
+
     <div><b>Current:</b></div>
     <div>window.innerHeight: <span id="o4"></span></div>
     <div>a.clientHeight: <span id="o5"></span></div>
     <div>a.offsetHeight: <span id="o6"></span></div>
+
     <div id="b" style="background:greenyellow;height:100vh">b</div>
+
     <script>
         document.getElementById('o1').innerHTML = String(window.innerHeight);
         document.getElementById('o2').innerHTML = String(document.getElementById('a').clientHeight);
