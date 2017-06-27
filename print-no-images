@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example Document</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+    html {
+      font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      background-color: rgb(63, 102, 87);
+      color: rgb(255, 255, 255);
+    }
+    body {
+      margin: 0;
+    }
+    h1,
+    h2,
+    h3 {
+      font-weight: inherit;
+    }
+    b,
+    strong {
+      font-weight: 500;
+    }
+    img {
+      vertical-align: top;
+    }
+    svg {
+      fill: currentColor;
+    }
+    .bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: no-repeat 50% 50%;
+      background-size: cover;
+      min-height: 100vh;
+    }
+    .bg img {
+      margin-bottom: 1.5rem;
+    }
+    .bg h1 {
+      margin: 0 0 1.5rem;
+      font-size: 2.3rem;
+      line-height: 1.1;
+    }
+    .bg-content {
+      padding-right: 50%;
+      margin: 3rem;
+    }
+    .features {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .text {
+      min-height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text h2 {
+      font-size: 1.6875rem;
+      margin-top: 1.5rem;
+      margin-bottom: .75rem;
+    }
+    .text p {
+      margin: 1.5rem 0;
+    }
+    .text > div {
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <img width="320" height="320" src="https://res.cloudinary.com/plyo/image/upload/v1487666498/wahl-eiendom-bolig-2/wakzoh6fzk3k0pqfumvz.svg">
+  </div>
+  <div class="bg">
+  </div>
+  <div class="text">
+    <div>
+      <h2>EN BOLIG SOM TENKER PÅ ALLE I FAMILIEN</h2>
+      <p>Dolviken er plassert slik at den tilbyr familien vinterhyggen samtidig som den er fantastisk om sommeren.&nbsp;Her kan både store og små nyte grønne omgivelser så vel som sjøen. En perfekt ramme for en trygg og aktiv hverdag.</p>
+    </div>
+  </div>
+  <div class="bg">
+  </div>
+  <div class="features">
+    <div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+          <path d="M25.2 5v1.6H8.8v71.5h27.5V95h54.9V5h-66zm-5.8 32.3h-4.5v-3.1h4.5v3.1zm0 .9v4.2h-4.5v-4.2h4.5zm0-4.9h-4.5v-3.1h4.5v3.1zm0-4h-4.5v-3.1h4.5v3.1zm0-4h-4.5v-3.1h4.5v3.1zm0-4h-4.5v-3.1h4.5v3.1zm0-8.6v4.6h-4.5v-4.6h4.5zm23 76.2V46.2h-6.1V72H14.9V48.5h10.6v-8.9h16.9v-8.9h-6.1v2.8H25.5V12.7h5.8v-1.6H85v6.5H58.9v31h-.1s-.2 1.6-1.3 3.2c-1.4 2.1-3.4 3.1-6.2 3.1v2.9c4.7 0 7.3-2.4 8.6-4.5.4-.6.7-1.1.9-1.7h6.8v-5.5h-3.3v-23H85v22.8H74.3V52H85v36.8H42.4z"></path>
+        </svg>
+      </div>
+      <div><p>Fra <strong>117,6</strong> til <strong>123,9</strong> kvm.</p></div>
+    </div>
+    <div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+          <path d="M54.813 6a2 2 0 0 0-1.22.563l-46 45C6.629 52.508 6 53.92 6 55.53c0 1.56.632 2.914 1.594 3.875l33 33C41.39 93.203 42.53 94 44 94c1.562 0 2.63-.85 3.375-1.563l46-44A2 2 0 0 0 94 47V8a2 2 0 0 0-2-2H55a2 2 0 0 0-.188 0zm1 4H90v36.125L44.625 89.531c-.39.374-.696.469-.625.469-.022 0-.2-.044-.594-.438l-33-33c-.186-.185-.406-.631-.406-1.03 0-.613.205-.929.406-1.126L55.813 10zM75 15.969c-4.947 0-9 4.084-9 9.031 0 4.947 4.053 9 9 9s9-4.053 9-9-4.053-9.031-9-9.031zM75 20c2.785 0 5 2.215 5 5s-2.215 5-5 5-5.031-2.215-5.031-5 2.246-5 5.031-5z"></path>
+        </svg>
+      </div>
+      <div><p>Pris fra <strong>4,8 </strong>til <strong>5,15 </strong>mill.</p></div>
+    </div>
+    <div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100" height="100">
+          <path d="M7.686 22.32a1 1 0 0 0 0-2H4.121a1 1 0 0 0 0 2h3.565zM8.686 24.975a1 1 0 0 0-1-1H1.983a1 1 0 0 0 0 2h5.703a1 1 0 0 0 1-1z"></path>
+          <path d="M46.949 22.881a1 1 0 0 0-.995-.898h-.627l-2.628-6.057a.998.998 0 0 0-.917-.602h-7.296v-4.296a1 1 0 0 0-1-1H5.96a1 1 0 0 0-1 1v5.64H1.983a1 1 0 0 0 0 2H5.96a1 1 0 0 0 1-1v-5.64h25.526v19.371H21c-.02 0-.037.011-.057.012-.469-2.603-2.746-4.586-5.481-4.586-2.757 0-5.047 2.015-5.49 4.648a.997.997 0 0 0-.367-.074H6.96V28.36a1 1 0 1 0-2 0v4.039a1 1 0 0 0 1 1h3.645c.13 0 .252-.029.367-.074.443 2.634 2.733 4.648 5.49 4.648 2.736 0 5.013-1.983 5.481-4.586.02.001.037.012.057.012h13.68c.474 2.597 2.748 4.574 5.479 4.574s5.006-1.978 5.479-4.574h1.277a.999.999 0 0 0 .995-1.101l-.961-9.417zM15.462 35.973c-1.971 0-3.574-1.604-3.574-3.574s1.603-3.574 3.574-3.574 3.574 1.604 3.574 3.574-1.603 3.574-3.574 3.574zm24.698 0c-1.971 0-3.574-1.604-3.574-3.574s1.604-3.574 3.574-3.574c1.969 0 3.57 1.6 3.573 3.567l-.001.007.001.007a3.577 3.577 0 0 1-3.573 3.567zm5.48-4.575c-.474-2.597-2.748-4.574-5.479-4.574s-5.006 1.978-5.479 4.574h-.194V17.324h6.64l2.628 6.057a.998.998 0 0 0 .917.602h.38l.759 7.416h-.172z"></path>
+        </svg>
+      </div>
+      <div><p>Innflyttingsklar <strong>Q4 2017</strong></p></div>
+    </div>
+  </div>
+  <div class="bg">
+  </div>
+</body>
+</html>
