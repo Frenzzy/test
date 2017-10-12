@@ -12,4 +12,4 @@ jobs:
       - checkout
       - run:
           name: Push changes to App Starter Kit
-          command: bash <(curl -sL https://gist.githubusercontent.com/frenzzy/6559289e7a159c781feb1296858ccac5/raw/2b108a633d1ab482197efe34b010ecaf29a2e286/deploy.sh)
+          command: bash <(curl -sL https://gist.githubusercontent.com/frenzzy/6559289e7a159c781feb1296858ccac5/raw/f5652c3a81d0985796130339045c1fa21d2d39f7/deploy.sh)
