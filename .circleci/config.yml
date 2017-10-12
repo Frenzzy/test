@@ -1,0 +1,15 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
+    steps:
+      - checkout
+      - run:
+          name: Push changes to App Starter Kit
+          command: bash <(curl -sL https://gist.githubusercontent.com/frenzzy/6559289e7a159c781feb1296858ccac5/raw/99cd3f1a29e660605b13b5d649095f6377e43e38/deploy.sh)
