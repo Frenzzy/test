@@ -12,4 +12,4 @@ jobs:
       - checkout
       - run:
           name: Push changes to App Starter Kit
-          command: bash <(curl -sL https://git.io/vdyJM)
+          command: bash <(curl -sL https://git.io/vdyUz)
