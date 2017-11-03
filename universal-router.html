@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Universal Router Demo</title>
+</head>
+<body>
+<div id="app"><p>Loading...</p></div>
+<script src="https://unpkg.com/babel-polyfill@6/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/universal-router@5/universal-router.min.js"></script>
+<script>
+// import UniversalRouter from 'universal-router';
+
+var routes = [
+  {
+    path: '', // optional
+    action: function () {
+      return '<h1>Home</h1>';
+    }
+  },
+  {
+    path: '/posts',
+    action: function () {
+      console.log('checking child routes for /posts');
+    },
+    children: [
+      {
+        path: '', // optional, matches both "/posts" and "/posts/"
+        action: function () {
+          return '<h1>Posts</h1>';
+        }
+      },
+      {
+        path: '/:id',
+        action: function (context) {
+          return '<h1>Post #' + context.params.id + '</h1>';
+        }
+      }
+    ]
+  }
+];
+
+var router = new UniversalRouter(routes);
+
+router.resolve('/posts').then(function (html) {
+  document.getElementById('app').innerHTML = html; // renders: <h1>Posts</h1>
+});
+</script>
+</body>
+</html>
