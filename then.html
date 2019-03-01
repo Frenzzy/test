@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Infinite .then()</title>
+  <script>
+var resolved = typeof Promise === "function" && Promise.resolve()
+
+var defer = !resolved
+  ? setTimeout
+  : function(cb) {
+      return resolved.then(cb)
+    }
+
+var count = 0
+var render = function() {
+  document.body.innerHTML = count++
+}
+var tick = function() {
+  defer(render)
+}
+
+setInterval(tick, 10)
+  </script>
+</head>
+<body>
+</body>
+</html>
