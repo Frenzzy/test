@@ -5,15 +5,15 @@
   </head>
   <body>
     <nav>
-      <a href="/">Home (/)</a>
-      <a href="/demo">Demo (/demo)</a>
-      <a href="/page">Page (/page)</a>
+      <a href="/">Home</a> |
+      <a href="/demo">Demo</a> |
+      <a href="/page">Page</a>
     </nav>
     <main>
       <h1>Home</h1>
     </main>
-    <script type="module">
-      import UniversalRouter from 'https://unpkg.com/universal-router?module'
+    <script src="https://unpkg.com/universal-router/universal-router.js"></script>
+    <script>
       const router = new UniversalRouter([
         { name: 'home', path: '', action: () => '<h1>Home</h1>' },
         { name: 'demo', path: '/demo', action: () => '<h1>Demo</h1>' },
