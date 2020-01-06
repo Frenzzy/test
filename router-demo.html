@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Demo</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home (/)</a>
+      <a href="/demo">Demo (/demo)</a>
+      <a href="/page">Page (/page)</a>
+    </nav>
+    <main>
+      <h1>Home</h1>
+    </main>
+    <script>
+      import UniversalRouter from 'https://unpkg.com/universal-router?module'
+      const router = new UniversalRouter([
+        { name: 'home', path: '', action: () => '<h1>Home</h1>' },
+        { name: 'demo', path: '/demo', action: () => '<h1>Demo</h1>' },
+        { name: 'page', path: '/page', action: () => '<h1>Page</h1>' }
+      ])
+      const container = document.getElementsByTagName('main')[0]
+      const render = (pathname) => router.resolve(pathname).then(html => {
+        container.innerHTML = html
+      })
+      window.addEventListener('click', event => {
+        if (event.target.tagName === 'A') {
+          event.preventDefault()
+          render(event.target.pathname)
+        }
+      })
+    </script>
+  </body>
+</html>
